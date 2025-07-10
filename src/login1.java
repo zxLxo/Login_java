@@ -1,5 +1,6 @@
 
 import java.util.Scanner;
+
 public class login1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -35,17 +36,15 @@ public class login1 {
         System.out.println("Digite sua senha:");
         String pass_auth = scan.nextLine();
 
-        // Verifica se os dados concedidos estão corretos, e permite ou nao o acesso ao usuario
-       System.out.println("\n=================================");
+        // Verifica se os dados concedidos estão corretos, e permite ou nao o acesso ao
+        // usuario
+        System.out.println("\n=================================");
         if (user.equals(user_auth) && pass.equals(pass_auth)) {
             System.out.println("Acesso concedido. Bem vindo!");
         } else {
             System.out.println("Usuário ou senha inválidos. Acesso Negado.");
-        
-                //fecha o scanner para evitar gasto desnecessario de processamento
-            scan.close();
-
         }
+        // fecha o scanner para evitar gasto desnecessario de processamento
+        scan.close();
     }
 }
-
